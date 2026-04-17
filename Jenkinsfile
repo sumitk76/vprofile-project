@@ -15,6 +15,9 @@ pipeline {
 	NEXUS_REPO_ID    = "vprofile-release"
         NEXUS_CREDENTIAL_ID = "nexuslogin"
         ARTVERSION = "${env.BUILD_ID}"
+		registryCredential = 'ecr:us-east-1:AWSID'
+        appRegistry = '800692740044.dkr.ecr.us-east-1.amazonaws.com/devops'
+        vprofileRegistry = "https://800692740044.dkr.ecr.us-east-1.amazonaws.com"
     }
 	
     stages{
